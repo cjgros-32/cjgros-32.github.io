@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae Dan</title>
+    <!-- PROBLEMA PARA USAR https://fontawesome.com/ Lo Reemplacé por Iconos de Google-->  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- FONTAWESOME no me reenvia el mail para poder acceder ya intente varias veces; después voy a probar con otro mail--> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- icono de carita -->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/4160/4160702.png " width="256" height="256" alt="" title="" class="img-small">
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+        
+</head>
+<body>
+    <header>
+        <h1 id="cv"> Curriculum Vitae</h1>
+    </header>
+<!-- Botón de ir a inicio de página -->    
+    <button class="ir_arriba"><i class="material-icons" style="font-size:30px;color:lightblue;text-shadow:2px 2px 4px #000000;">home</i></button>
+    <button class="ir_arriba hidden"><i class="material-icons" style="font-size:30px;color:lightblue;text-shadow:2px 2px 4px #000000;">home</i></button>
+    <script src="funcion.js"></script> 
+    
+<nav id="menu">
+    <ul class="menu1">
+        <li class="menu2"><a class="menu3" href="#informacion_personal">Información Personal</a>
+            </li>
+        <li class="menu2"><a class="menu3" href="#experiencias">Experiencias</a>
+            </li>
+        <li class="menu2"><a class="menu3" href="#habilidades">Habilidades</a>
+            </li>
+        <li class="menu2"><a class="menu3" href="#estudios">Estudios</a>
+            </li>
+        <li class="menu2"><a class="menu3" href="#encuestas">Encuesta</a>
+            </li>  
+        <li class="menu2"><a class="menu3" href="#sorteo">Sorteo</a>
+            </li>
+    </ul>
+</nav>       
+
+<section id="seccion_01">
+    <img id="foto_perfil" src="https://randomuser.me/api/portraits/men/71.jpg" alt="Si no ves la foto proba actualizando el navegador ">
+</section>
+
+<h3 id="dan_ramirez" class="font-effect-shadow-multiple"> Dan Ramirez </h3>
+
+<section id="acerca_de_mi">
+    <P>Hola soy una persona divertida, me gusta la programación y estoy dando mis primeros pasos. <br>
+    También me gustan las artes y la naturaleza. Del arte me interesa la pintura y el audiovisual. <br>
+    Más abajo agrego un video de Youtube, más precisamente el primer video. <br>
+    El mismo se compone de un poco de programación, audiovisual y se podria pensar de "naturaleza".</P>
+    <p>Después del video detallo información personal, experiencias y habilidades. <br>
+    Si deseas contestar hay una encuesta sobre la página. <br>
+    Al final si completas tus datos: nombre, apellido y mail participas de un sorteo. <br>
+    <p>Eso es todo. Gracias y buena suerte!!! </p>
+</section> 
+
+<section id="videoyoutube">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jNQXAC9IVRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<main>
+
+<section id="informacion_personal">
+    <h2 class="titulos_01">Información Personal</h2>
+        <p class="datos">Nombre: <span class="datos_2"> Dan</span></p>
+        <p class="datos">Apellido:<span class="datos_2"> Ramirez</span></p>
+        <p class="datos">Fecha de nacimiento:<span class="datos_2"> 5/3/1963</span></p>
+        <p class="datos">Dirección:<span class="datos_2"> 268 Dane St</span></p>
+        <p id="contacto">Contacto:</p>
+            <ul class="listas_01">
+                <li>Mail: <span class="datos_2">dan.ramirez@example.com</span></li> 
+                    <button type= "button"  href="mailto::dan.ramirez@example.com">Enviar</button>
+                <li>Tel:<span class="datos_2">(667) 751-7378</span></li>
+                    <button type= "button" id="llamar">Llamar</button>
+                    
+            </ul>
+    
+</section>
+
+<section id="experiencias">
+    <h2 class="titulos_01">Experiencias</h2>
+        <ul class="listas_02">
+            <li class="listas_03">Proyecto de página web que muestra un c.v:</li>
+                <p class="datos_3">Desarrollo de página web por encargo de Ticmas.</p> 
+                <p class="datos_3">Primero se elaboró un boceto sobre papel con la estructura.</p>
+                <p class="datos_3">Luego se lo transcribio en HTML.</p> 
+                <p class="datos_3">Se confeccionó el diseño con CSS.</p>
+                <p class="datos_3">Para luego aplicar algunas funcionalidades con JavaScript.</p>
+            <li class="listas_03">Programación con objetos con Ruby:</li>
+                <p class="datos_3">Programación de orientación de aves dentro de la argentina; <br>
+                por ejemplo la ruta de migración de Obera a Buenos Aires.</p> 
+                <p class="datos">Implementacion de software para restaurant. El cual se especializó <br>
+                      en análisis para condimentar diversos platos.</p>
+                
+            <li class="listas_03">Programación imperativa con JavaScript:</li>
+                <p class="datos_3">Diseño de software para estudio contable de una reconocida empresa, <br>
+                     por medio de análisis de registros de los balances de cada mes con una <br>
+                     lista para guardarlos. Por ejemplo, para el último semestre del año</p>
+                 
+        </ul>
+</section>       
+
+<section id="habilidades">
+    <h2 class="titulos_01">Habilidades</h2>
+
+        <ul>
+            <li class="listas_03">Idiomas</li>
+            <ol class="datos_3">
+                <li>Español</li>
+                <li>Ingles</li>
+                <li>Alemán</li>
+            </ol>
+          </li>
+          <li class="listas_03">Software</li>
+            <ol class="datos_3">
+                <li>Gobstone</li>
+                <li>JavaScript</li>
+                <li>Ruby</li>
+             </ol>
+        </ul>
+</section>    
+
+<section id="estudios">
+    <h2 class="titulos_01">Estudios</h2>
+        <ul>
+            <li class="datos_3">ArgentinaPrograma 3.0</li>
+            <li class="datos_3">ArgentinaPrograma 4.0</li>
+        </ul>
+</section>
+
+<section id="encuestas">
+    <h2 class="titulos_01">Encuesta</h2>
+        <p class="datos_3">¿Te gusto la página?</p>
+        <div>
+	        <input  type="radio" name="te_gusto" id="megusta" value="megusta" checked>
+            <label  class="datos_3" for="compu">Me Gusta</label>
+	    </div>		    
+	    <div>
+	        <input type="radio" name="te_gusto" id="nogusta" value="nogusta">
+            <label class="datos_3" for="celu">No me Gusta</label>    
+	    </div>
+</section>     
+
+<section id="sorteo">   
+
+    <h2 class="titulos_01"> Sorteo!!!  </h2>
+
+    <p class="listas_03">Para participar del sorteo completá el siguiente formulario:</p>
+        <form action="" method="get">
+            <label class="datos_4">Nombre: </label>
+            <input class="datos_5" type="text" name="nombre" placeholder="ingrese su Nombre"/> <br>
+            <label class="datos_4">Apellido: </label>
+            <input class="datos_5" type="text" name="apellido"placeholder="ingrese su Apellido"/> <br>
+            <label class="datos_4">  E-mail:  </label>
+            <input class="datos_5"type="email" name="mail"placeholder="ingrese su e-mail"/> <br>
+            <input class="datos_4" type="submit" value="Enviar"> <br>
+        </form>
+    </section>
+
+<section id="gracias">
+        <h2 id="gracias">Gracias por visitar la página !!!</h2>
+    </section>   
+</main>
+<footer>Diseñado por C.J.G. | Copyright © 2023</footer>
+</body>
+
+</html>
