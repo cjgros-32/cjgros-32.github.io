@@ -1,6 +1,6 @@
 //Boton inicio "IR ARRIBA" //
 
-const showOnPx = 100;
+const movimiento_px = 100;
 const boton_ir_arriba = document.querySelector(".ir_arriba")
 
 const scrollContainer = () => {
@@ -8,7 +8,7 @@ const scrollContainer = () => {
 };
 
 document.addEventListener("scroll", () => {
-  if (scrollContainer().scrollTop > showOnPx) {
+  if (scrollContainer().scrollTop > movimiento_px) {
     boton_ir_arriba.classList.remove("hidden")
   } else {
     boton_ir_arriba.classList.add("hidden")
@@ -23,4 +23,13 @@ const arriba = () => {
 
 boton_ir_arriba.addEventListener("click", arriba)
 
+// Evento de validación para formulario //
+
+function validacion_formulario() {
+  let x = document.form["formulario"]["nombre"];
+  if (x == "") {
+    alert("por favor ingrese su nombre, apellido y mail");
+    return false;
+  }
+}
 
