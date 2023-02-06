@@ -76,6 +76,20 @@ li a.menu3 {
     text-decoration: none;
     font-family: 'Roboto', sans-serif, bold;
    }
+   @media only Screen and (max-width: 766px) {
+    li a.menu3 {
+        padding-top:15px;
+        margin-top: 15px;
+        text-align: center;
+        margin: 20px;
+        border: solid 3px #fff3f3;
+        background-color: #53069c;
+        }
+     }
+    
+   li a.menu3:hover {
+     background-color: #000000;
+   }
 
 @media only Screen and (max-width: 600px) {
   li a.menu3 {
@@ -91,6 +105,8 @@ li a.menu3 {
  li a.menu3:hover {
    background-color: #000000;
  }
+
+
 
  
 /*Foto de perfil de https://randomuser.me */ 
@@ -113,7 +129,7 @@ li a.menu3 {
     text-shadow: 3px 3px 5px #ffffff;
     padding: 0px;
     margin: 20px;
-    margin-bottom: 25px; 
+    margin-bottom: 10px; 
     }
 
 /* Presentación Primera parte "Acerca de mi" */    
@@ -233,7 +249,26 @@ h2.titulos_01 {
    
       }
 
-/* saludo final */
+/*boton encuesta*/
+#encuesta::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600; 
+    content: "\f14d";
+    margin-right: 15px;
+  } 
+  
+  #encuesta {
+    display: block;
+    margin-left: auto;
+    margin-bottom: auto;
+    color:whitesmoke;
+    background-color: #111111;
+    border:solid 3px #ffffff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    }  
+
+    /* saludo final */
 #gracias {
     color:black;
     font-family:"Sofia", sans-serif;
@@ -255,5 +290,89 @@ h2.titulos_01 {
     margin-right: 10px;
     text-align: center;
     align-content: center;
-    position: fixed;;
+    position: fixed;
   }
+
+
+ /*icono Font Aweson boton imprimir*/
+.btn_01::before {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 600; 
+  content: "\f02f";
+  margin-right: 15px;
+} 
+/*boton imprimir*/
+.btn_01{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:whitesmoke;
+  background-color: #111111;
+  border:solid 3px #ffffff;
+  border-radius: 40px;
+  margin-bottom: 15px;
+  }
+
+
+
+ /*imprimir */
+ 
+ @media print {
+  #bg-info p-3 {
+    display:none;
+  }     
+.header {
+    display:none;
+  }   
+  
+#menu {
+    display:none
+  }
+
+.menu1{
+  display:none
+  }
+
+#videoyoutube {
+  display:none
+  }
+  
+#encuestas  {
+  display:none
+  }
+
+#sorteo  {
+  display:none
+  }
+
+#imprimir {
+  display:none
+    }
+
+#acerca_de_mi{
+  margin-bottom: 200px;
+}
+
+#habilidades{
+  margin-top: 250px;
+  padding-top: 2%;
+}
+
+.sectores {
+  margin: 0 auto;
+  margin-top: 25px;
+  background-image: none;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding:2%;
+  border-radius: none;
+  box-shadow: none ;
+  }
+
+  #gracias{
+    margin-top: 25%;
+  }
+
+
+ }   

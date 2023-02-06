@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Sofia&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/4160/4160702.png " width="256" height="256" alt="" title="" class="img-small">
     <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estiloimpresion.css" media="print" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     
 </head>
@@ -20,23 +21,23 @@
     </header>
 
 <!-- Botón de ir a inicio de página --> 
-    <button class="ir_arriba"> Inicio</i></button>
-    <button class="ir_arriba hidden"> Inicio</i></button>
+    <button class="ir_arriba" > Inicio</i></button>
+    <button class="ir_arriba hidden" > Inicio</i></button>
     <script src="funcion.js"></script> 
     
 <nav id="menu">
     <ul class="row" class="menu1" >
-        <li class="col-xs-12 col-lg-2" class="menu2"><a class="menu3" href="#informacion_personal">Información Personal</a>
+        <li class="col-xs-12 col-lg-2 " ><a class="menu3" href="#informacion_personal">Información Personal</a>
             </li>
-        <li class="col-xs-12 col-lg-2" class="menu2"><a class="menu3" href="#experiencias">Experiencias</a>
+        <li class="col-xs-12 col-lg-2" ><a class="menu3" href="#experiencias">Experiencias</a>
             </li>
-        <li class="col-xs-12 col-lg-2" class="menu2"><a class="menu3" href="#habilidades">Habilidades</a>
+        <li class="col-xs-12 col-lg-2"><a class="menu3" href="#habilidades">Habilidades</a>
             </li>
-        <li class="col-xs-12 col-lg-2" class="menu2"><a class="menu3" href="#estudios">Estudios</a>
+        <li class="col-xs-12 col-lg-2" ><a class="menu3" href="#estudios">Estudios</a>
             </li>
-        <li class="col-xs-12 col-lg-2" class="menu2"><a class="menu3" href="#encuestas">Encuesta</a>
+        <li class="col-xs-12 col-lg-2" ><a class="menu3" href="#encuestas">Encuesta</a>
             </li>  
-        <li class="col-xs-12 col-lg-2" class="menu2"><a class="menu3" href="#sorteo">Sorteo</a>
+        <li class="col-xs-12 col-lg-2" ><a class="menu3" href="#sorteo">Sorteo</a>
             </li>
     </ul>
 </nav>       
@@ -45,6 +46,8 @@
 <section class="foto_nombre"  id="seccion_01">
     <img id="foto_perfil" src="https://randomuser.me/api/portraits/men/71.jpg" alt="Si no ves la foto proba actualizando el navegador ">
     <h3 id="dan_ramirez"> DAN RAMIREZ </h3>
+    <button type="button" onclick="javascript:window.print()" class="btn_01" class="d-print-none">Imprimir C.V.</button></a>
+
 </section>
 
 
@@ -134,14 +137,16 @@
 <section class="sectores" id="encuestas">
     <h2 class="titulos_01">Encuesta:</h2>
         <p class="datos_3">¿Te gusto la página?</p>
+        <script src="funcion.js"></script> 
         <div>
-	        <input  type="radio" name="te_gusto" id="megusta" value="megusta" checked>
-            <label  class="datos_3" for="compu">Me Gusta</label>
-	    </div>		    
-	    <div>
-	        <input type="radio" name="te_gusto" id="nogusta" value="nogusta">
-            <label class="datos_3" for="celu">No me Gusta</label>    
+	        <input  type="radio"  id="megusta" name="gusto">
+            <label  class="datos_3" for="megusta">Me Gusta</label><br>
+	    	<input type="radio" id="nogusta" name="gusto" >
+            <label class="datos_3" for="nogusta">No me Gusta</label> 
+            <button id="encuesta" onclick="encuesta()">aceptar</button>
+              
 	    </div>
+               
 </section>     
 
 <section class="sectores" id="sorteo">   
@@ -166,7 +171,7 @@
     
   
 </main>
-<footer class="container-fluid bg-4 text-center" class="fixed-bottom">Diseñado por C.J.G. | Copyright © 2023</footer>
+<footer class="container-fluid bg-4 text-center" class="fixed-bottom" class="d-print-none">Diseñado por C.J.G. | Copyright © 2023</footer>
 </body>
 
 </html>

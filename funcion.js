@@ -20,8 +20,7 @@ const arriba = () => {
     behavior: "smooth",
   });
 };
-
-boton_ir_arriba.addEventListener("click", arriba)
+boton_ir_arriba.addEventListener("click", arriba);
 
 // Evento de validación para formulario //
 
@@ -43,3 +42,15 @@ function validar_formulario() {
     return false;
   }
 }
+// Encuesta Mensaje //
+
+function encuesta() {
+  if(document.getElementById("megusta").checked){
+    alert("Gracias");
+  }
+  if(document.getElementById("nogusta").checked){
+    alert("Estamos aprendiendo, esperamos mejorar");
+  }
+    
+}
+
