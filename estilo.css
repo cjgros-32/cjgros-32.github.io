@@ -89,37 +89,39 @@ li a.menu3 {
    }
   
  li a.menu3:hover {
-   background-color: #04570f;
+   background-color: #000000;
  }
 
+ 
 /*Foto de perfil de https://randomuser.me */ 
 #foto_perfil {
     display: block;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 10%;
+    width: 25%;
     border-radius: 50%;
     border:solid
   }  
 
 /* Nombre de ficción de Ramdomuser.me */
 #dan_ramirez{
-    font-family: "Sofia", sans-serif;      
+    font-family: 'Roboto', sans-serif;    
     text-align: center;
-    font-size: 25px;
-    border-width: 10px 10px;
-    text-shadow: 2px 2px 2px #fff3f3;
+    font-weight:bold;
+    text-decoration: ;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 5px #ffffff;
     padding: 0px;
-    margin: 10px; 
-    text-decoration-line: underline;
-  }
+    margin: 20px;
+    margin-bottom: 25px; 
+    }
 
 /* Presentación Primera parte "Acerca de mi" */    
 #acerca_de_mi p {
     text-align: center;
     font-family:"Sofia", sans-serif;
-    font-size: 25px;
+    font-size: 21px;
     color:rgb(0, 0, 0);
     line-height: 1.6
   }
@@ -157,17 +159,20 @@ li a.menu3 {
     padding-top: 20px;
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
+    font-size: large;
     color: rgb(0, 0, 0);
     margin: 1px;
+    text-decoration: underline solid rgb(0, 0, 0) 10%; 
   }
 
 /* estilo general para varias secciones*/
 h2.titulos_01 {
     color:black;
-    text-decoration: underline solid rgb(86, 5, 179) 10%; 
+    text-decoration: underline solid rgb(0, 0, 0) 10%; 
     font-family: 'Roboto', sans-serif;
     font-weight:bold;
-    
+    text-shadow: 3px 3px 5px #ffffff;
+ 
   }
 
 .datos {
@@ -178,17 +183,20 @@ h2.titulos_01 {
 
 .datos_2 {
     font-family: 'Roboto', sans-serif;
-    color: rgb(86, 5, 179);
-    text-shadow: 1px 1px 1px rgb(2, 2, 2)
-  
+    color: rgb(30, 29, 31);
+     
   }
 
+.links {
+ color: rgb(1, 7, 82);
+}
+  
 .listas_01 {
     list-style-type:disc;
     color:black;
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
-    text-shadow: 1px 1px 1px rgb(2, 2, 2)
+    
   }
 
 .listas_03 {

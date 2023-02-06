@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae Dan</title>
     <script src="https://kit.fontawesome.com/7a74d6bcb6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Sofia&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/4160/4160702.png " width="256" height="256" alt="" title="" class="img-small">
     <link rel="stylesheet" type="text/css" href="estilo.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -43,14 +42,15 @@
 </nav>       
 
 
-<section id="seccion_01">
+<section class="foto_nombre"  id="seccion_01">
     <img id="foto_perfil" src="https://randomuser.me/api/portraits/men/71.jpg" alt="Si no ves la foto proba actualizando el navegador ">
+    <h3 id="dan_ramirez"> DAN RAMIREZ </h3>
 </section>
 
-<h3 id="dan_ramirez" class="font-effect-shadow-multiple"> Dan Ramirez </h3>
+
 
 <section id="acerca_de_mi">
-    <P>Hola soy una persona divertida, me gusta la programación y estoy dando mis primeros pasos. <br>
+    <P>Hola soy una persona proactiva, me gusta la programación y estoy dando mis primeros pasos. <br>
     También me gustan las artes y la naturaleza. Del arte me interesa la pintura y el audiovisual. <br>
     Más abajo agrego un video de Youtube, más precisamente el primer video. <br>
     El mismo se compone de un poco de programación, audiovisual y se podría pensar de "naturaleza".</P>
@@ -74,10 +74,8 @@
         <p class="datos">Dirección:<span class="datos_2"> 268 Dane St</span></p>
         <p id="contacto">Contacto:</p>
             <ul class="listas_01">
-                <li>Mail: <span class="datos_2">dan.ramirez@example.com</span></li> 
-                    <button type= "button"  href="mailto::dan.ramirez@example.com">Enviar</button>
-                <li><a href="tel:+6677517378">Tel:<class="datos_2">+667 751 7378 </a></li>
-                    <button type= "button" id="llamar">Llamar</button>
+                <li class="datos">Mail: <a href="mailto:dan.ramirez@example.com" class="links">dan.ramirez@example.com</a></li> 
+                <li class="datos">Tel: <a href="tel:+6677517378" class="links">+667 751 7378 </a></li>
             </ul>
     
 </section>
@@ -151,20 +149,22 @@
     <h2 class="titulos_01">Sorteo por visitar la página</h2>
 
     <p class="datos_3">Para participar del sorteo complete el siguiente formulario:</p>
-        <form id="formulario" action="" method="get" >
+        <form name="formulario" action="" onsubmit="return validar_formulario()" method="get">>
             <label class="datos_4">Nombre: </label>
-            <input id= "nombre" class="datos_5" type="text" name="nombre" placeholder="Ingrese su Nombre" required/> <br>
+            <input class="datos_5" type="text" name="nombre" placeholder="Ingrese su Nombre"/> <br>
             <label class="datos_4">Apellido: </label>
-            <input class="datos_5" type="text" name="apellido" placeholder="Ingrese su Apellido" required /> <br>
+            <input class="datos_5" type="text" name="apellido" placeholder="Ingrese su Apellido"/> <br>
             <label class="datos_4">  E-mail:  </label>
-            <input class="datos_5"type="email" name="mail" placeholder="Ingrese su e-mail" required/> <br>
+            <input class="datos_5"  type="email" name="mail" placeholder="Ingrese su e-mail" required/> <br>
             <input class="datos_4" type="submit" value="Enviar"> <br>
         </form>
     </section>
 
 <section id="gracias">
         <h2 id="gracias">Gracias por visitar la página !!!</h2>
-    </section>   
+    </section>  
+    
+  
 </main>
 <footer class="container-fluid bg-4 text-center" class="fixed-bottom">Diseñado por C.J.G. | Copyright © 2023</footer>
 </body>
