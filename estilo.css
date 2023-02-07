@@ -153,8 +153,14 @@ li a.menu3 {
     align-items: center;
     padding:0.1%;
     border-radius: 30px 10px;
-    box-shadow: 15px 15px 15px ;
-  }    
+    box-shadow: 15px 15px 15px;
+  }
+   @media only Screen and (max-width: 600px) {
+    #videoyoutube iframe {
+    width: 350px;
+    height: 250px;
+  }
+  }     
 
 /* Secciones principales */
 .sectores {
