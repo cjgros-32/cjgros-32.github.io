@@ -3,11 +3,11 @@
 header {
     margin-top: 10px;
     border-radius: 80px;
-    animation: movimiento01 09s infinite;
+    animation: movimiento01 03s infinite;
   }    
 @keyframes movimiento01 {
-    from {background-color: #c655d4;}
-    to {background-color: rgb(243, 91, 218);}
+    from {background-color: #de21f7;}
+    to {background-color: rgb(238, 117, 218);}
   }
 
 #cv {
@@ -48,17 +48,23 @@ header {
     from {background-color: #04570f;}
     to {background-color: rgb(173, 3, 145);}
   }
-  @media only Screen and (max-width: 600px){
+ /*centrado de boton y ocultamiento de texto*/ 
+  @media only Screen and (max-width: 767px){
   .ir_arriba {
     right: 10px;
     bottom: 35px;
+    white-space: nowrap; 
+    width: 32px; 
+    overflow: hidden;
+    text-overflow: clip; 
     }
   }
 .hidden {
     display: none;
   }
 
-/* menu principal de la página*/   
+/* menu principal de la página con adapción según la pantalla se utilizó @media only Screen + Boostrap con la class row
+y la class col-xs-12 col-lg-2 */     
 #menu {
     background-color: rgb(173, 3, 145);
     padding: 0px;
@@ -81,35 +87,33 @@ li a.menu3 {
     text-decoration: none;
     font-family: 'Roboto', sans-serif, bold;
    }
-   @media only Screen and (max-width: 766px) {
-    li a.menu3 {
-        padding-top:15px;
-        margin-top: 15px;
-        text-align: center;
-        margin: 20px;
+      li a.menu3:hover {
+    background-color: #000000;
+     }
+    @media only Screen and (max-width: 600px){
+     li a.menu3:hover {
+        background-color: #754859;
+      }
+    }
+   @media only Screen and (max-width: 990px) {
+      li a.menu3 {
+        padding-top:5px;
+        margin-top: 5px;
+        margin: 5px;
         border: solid 3px #fff3f3;
         background-color: #53069c;
         }
-     }
-    
-   li a.menu3:hover {
-     background-color: #000000;
-   }
-
-@media only Screen and (max-width: 600px) {
-  li a.menu3 {
-      padding-top:15px;
-      margin-top: 15px;
-      text-align: center;
-      margin: 20px;
-      border: solid 3px #fff3f3;
-      background-color: #111111;
+      @media only Screen and (max-width: 600px) {
+      li a.menu3 {
+        padding-top:0px;
+        margin-top: 2px;
+        text-transform: uppercase;
+        margin: 15px;
+        border: solid 3px #fff3f3;
+        background-color: #000000;
+        }
       }
-   }
- 
- li a.menu3:hover {
-   background-color: #000000;
- }
+}
 
 /*Foto de perfil de https://randomuser.me */ 
 #foto_perfil {
