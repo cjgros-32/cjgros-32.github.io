@@ -48,7 +48,12 @@ header {
     from {background-color: #04570f;}
     to {background-color: rgb(173, 3, 145);}
   }
-
+  @media only Screen and (max-width: 600px){
+  .ir_arriba {
+    right: 10px;
+    bottom: 35px;
+    }
+  }
 .hidden {
     display: none;
   }
