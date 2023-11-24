@@ -1,15 +1,15 @@
-# Poyecto de Curriculum Vitae 
-## curso de TICMAS 
+#  Proyecto de Curriculum Vitae 
+## Curso Frontend TICMAS 
 
 ## Los requisitos del mismo son los siguientes:
 
-                    1) Informacion Personal 
-                    2) Experiencia
-                    3) Habilidades
+                    __1) Informacion Personal__
+                    __2) Experiencia__
+                    **3) Habilidades**
                                                 
 ## Se realizo con :
-                    1) HTML
-                    2) CSS
-                    3) JavaScript
-                    4) Boostrap
+                    **1) HTML**
+                    **2) CSS**
+                    **3) JavaScript**
+                    **4) Boostrap**
                     
