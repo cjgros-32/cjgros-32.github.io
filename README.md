@@ -1,10 +1,11 @@
-# Poyecto de Curriculum Vitae para el curso de TICMAS 
+# Poyecto de Curriculum Vitae 
+## curso de TICMAS 
 
 ## Los requisitos del mismo son los siguientes:
 
-                                                 1) Informacion Personal 
-                                                 2) Experiencia
-                                                 3) Habilidades
+                    1) Informacion Personal 
+                    2) Experiencia
+                    3) Habilidades
                                                 
 ## Se realizo con :
                     1) HTML
