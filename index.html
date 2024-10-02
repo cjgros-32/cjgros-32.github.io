@@ -141,18 +141,18 @@
 <section class="sectores" id="sorteo">   
     <h2 class="titulos_01">Sorteo por visitar la página</h2>
     <p class="datos_3">Para participar del sorteo complete el siguiente formulario:</p>
-        <form name="formulario" action="" onsubmit="return validar_formulario()" method="get">>
+        <form name="formulario" action="" onsubmit="return validar_formulario()" method="get">
             <label class="datos_4">Nombre: </label>
-            <input class="datos_5" type="text" name="nombre" placeholder="Ingrese su Nombre"/> <br>
+            <input class="datos_5" type="text" name="nombre" placeholder="Ingrese su Nombre" required/> <br>
             <label class="datos_4">Apellido: </label>
-            <input class="datos_5" type="text" name="apellido" placeholder="Ingrese su Apellido"/> <br>
+            <input class="datos_5" type="text" name="apellido" placeholder="Ingrese su Apellido" required/> <br>
             <label class="datos_4">  E-mail:  </label>
             <input class="datos_5"  type="email" name="mail" placeholder="Ingrese su e-mail" required/> <br>
             <input class="datos_4" type="submit" value="Enviar"> <br>
         </form>
     </section>
 
-<section id="gracias">
+<section id="gracias" style="display: none;">
         <h2 id="gracias">Gracias por visitar la página !!!</h2>
     </section>  
 </main>
