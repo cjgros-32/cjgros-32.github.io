@@ -41,6 +41,9 @@ function validar_formulario() {
     alert("POR FAVOR INGRESE SU MAIL");    
     return false;
   }
+   // Si todo es correcto, mostrar la sección de gracias
+    document.getElementById("gracias").style.display = "block"; // Muestra la sección de gracias
+    return false; // Prevenir el envío real del formulario
 }
 // Encuesta Mensaje //
 
