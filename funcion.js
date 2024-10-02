@@ -42,8 +42,8 @@ function validar_formulario() {
     return false;
   }
    // Si todo es correcto, mostrar la sección de gracias
-    document.getElementById("gracias").style.display = "block"; // Muestra la sección de gracias
-    return false; // Prevenir el envío real del formulario
+  document.getElementById("gracias").style.display = "block"; // Muestra la sección de gracias
+  return false; // Prevenir el envío real del formulario
 }
 // Encuesta Mensaje //
 
